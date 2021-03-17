@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<!-- upload parameters -->
+        <rosparam command="load" ns="kinematics_mecanum" file="$(find archie_kinematics_mecanum)/launch/test_setup.yaml"/>
+	
+	<!-- start relayboard node -->
+        <node pkg="archie_kinematics_mecanum" type="archie_kinematics_mecanum_node" ns="kinematics_mecanum" name="archie_kinematics_mecanum_node" respawn="false" output="screen"/>
+
+</launch>
